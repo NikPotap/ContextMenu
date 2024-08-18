@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.ContextMenu
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
@@ -37,21 +36,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         randomNumberBTN.setOnClickListener(this)
     }
 
-    var point = 0
-    var randomNumber = 0
+    private var point = 0
+    private var randomNumber = 0
     override fun onCreateContextMenu(
         menu: ContextMenu?,
         v: View?,
         menuInfo: ContextMenu.ContextMenuInfo?
     ) {
-        if (v?.id == R.id.enterRatingET) point = 0 else point = 1
+        point = if (v?.id == R.id.enterRatingET) 0 else 1
         super.onCreateContextMenu(menu, v, menuInfo)
         menuInflater.inflate(R.menu.context_menu, menu)
     }
 
     @SuppressLint("ResourceAsColor")
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        var rate = enterRatingET.text.toString()
+        val rate = enterRatingET.text.toString()
         when (item.itemId) {
             R.id.menu_change_color ->
                 if (point == 0) {
