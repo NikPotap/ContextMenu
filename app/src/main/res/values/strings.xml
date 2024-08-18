@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ContextMenu</string>
+    <string name="enterRating">введите оценку</string>
+    <string name="randomNumber">Случайное число</string>
+    <string name="ratingInColor">Цветовая характеристика</string>
+    <string name="closeApp">Закрыть приложение</string>
+</resources>

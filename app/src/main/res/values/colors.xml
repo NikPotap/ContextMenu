@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="ratingOrange">#FF8800</color>
+    <color name="ratingYellow">#FFFF00</color>
+    <color name="ratingGreen">#00FF00</color>
+    <color name="ratingBlue">#0000FF</color>
+    <color name="ratingRed">#FF0000</color>
+
+</resources>
